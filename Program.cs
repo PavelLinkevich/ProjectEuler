@@ -8,22 +8,36 @@ namespace EasyTask
 {
     class Program
     {
-        static int[] array = new int[20];
+        public static int[] array = new int[20];
         static void Main(string[] args)
         {
-            EvenFibonachiNumbers();
-        }
-        static void EvenFibonachiNumbers()
+            Fibonachi.EvenFibonachiNumbers();
+        }        
+    }
+    class Fibonachi
+    {
+        public static int[] array = new int[20];
+        public static void EvenFibonachiNumbers()
         {
             array[0] = 0;
             array[1] = 1;
-            Console.WriteLine(array[0]);
-            Console.WriteLine(array[1]);
             for (int i = 2; i < 20; i++)
             {
                 array[i] = array[i - 1] + array[i - 2];
-                Console.WriteLine(array[i]);
+            }
+            Helper.Help();
+        }
+    }
+    class Helper
+    {
+        public static void Help()
+        {                      
+            for (int i = 0; i < 20; i++)
+            {
+                ;
+                Console.WriteLine(Fibonachi.array[i]);
             }
         }
     }
+
 }
