@@ -25,13 +25,13 @@ namespace EasyTask
             {
                 array[i] = array[i - 1] + array[i - 2];
             }
-            Helper.Help();
-            Helper.Help2();
+            Helper.Writer();
+            Helper.SumWriter();
         }        
     }
     class Helper
     {
-        public static void Help()
+        public static void Writer()
         {                      
             for (int i = 0; i < 20; i++)
             {
@@ -39,7 +39,7 @@ namespace EasyTask
                 Console.WriteLine(Fibonachi.array[i]);
             }
         }
-        public static void Help2()
+        public static void SumWriter()
         {
             for (int i = 0; i < 20; i++)
             {
