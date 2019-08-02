@@ -26,7 +26,8 @@ namespace EasyTask
                 array[i] = array[i - 1] + array[i - 2];
             }
             Helper.Help();
-        }
+            Helper.Help2();
+        }        
     }
     class Helper
     {
@@ -34,8 +35,19 @@ namespace EasyTask
         {                      
             for (int i = 0; i < 20; i++)
             {
-                ;
+                
                 Console.WriteLine(Fibonachi.array[i]);
+            }
+        }
+        public static void Help2()
+        {
+            for (int i = 0; i < 20; i++)
+            {
+                if (Fibonachi.array[i] % 2 != 1)
+                {
+                    Console.Write(Fibonachi.array[i]+ " ");
+                }
+               
             }
         }
     }
